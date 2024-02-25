@@ -1,0 +1,48 @@
+.facture-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .facture-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .table-container {
+    margin-bottom: 20px;
+  }
+  
+  .table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th,
+  .table-container td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .table-container th {
+    background-color: #f4f4f4;
+  }
+  
+  .total-section {
+    margin-top: 20px;
+  }
+  
+  .total-section p {
+    margin-bottom: 10px;
+  }
+  
+  .total-section strong {
+    font-size: 18px;
+    color: #007bff;
+  }
+  
