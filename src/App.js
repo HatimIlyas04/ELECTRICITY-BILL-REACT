@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import InformationsConsommation from './COMPONENT/InformationsConsommation ';
+import Facture from './COMPONENT/Facture';
+import './App.css'; 
 
-function App() {
+
+const App = () => {
+  const [consommation, setConsommation] = useState(null);
+
+  const handleValidation = (consommation) => {
+    setConsommation(parseFloat(consommation)); 
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Calcul de la facture d'électricité</h1>
+      <InformationsConsommation onValidation={handleValidation} />
+      {consommation !== null && !isNaN(consommation) && ( // NT7A9O BALI CONSOMMATION MACHI NULL
+        <Facture consommation={consommation} />
+      )}
     </div>
   );
-}
+};
 
 export default App;
