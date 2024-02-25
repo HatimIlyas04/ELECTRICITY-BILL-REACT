@@ -1,0 +1,17 @@
+.input-container {
+    margin-bottom: 10px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  
+  .validation-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
